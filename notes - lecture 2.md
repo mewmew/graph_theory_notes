@@ -82,6 +82,8 @@ Recall: \delta(G) = minimal degree in G.
 
 Prop: 1.42. If G is non-empty,
 
+Note: proving this inequality is probably on the exam.
+
    \kappa(G) <= \lambda(G) <= \delta(G)
 
 If you disconnect every edge from the minimum degree of G, that disconnects the graph.
@@ -143,3 +145,17 @@ Then there must be a cycle. There cannot be any other vertex connected to the cy
 
 \delta(G) >= n/2, also entails that the graph is connected.
 Suppose it is disconnected. The smallest component is going to have at most half the verticies. What is the degree of the smallest component that has at most n/2 nodes. The degree of such a component would be n/2-1, thus contradicting that it is not connected.
+
+## Problem
+
+We have a country with k states. It is connected, you can go by car or train anywhere.
+
+G might not be Hamiltonian.
+
+![Not Hamiltonain](inc/lecture_2/not_hamiltonian.png)
+
+Subdivide states into regions, maybe now it is Hamiltonain?
+
+Problem: we want to divide the states into regions, such that the regions is Hamiltonian.
+
+Show that 2k-1 regions in total always sufficies.
