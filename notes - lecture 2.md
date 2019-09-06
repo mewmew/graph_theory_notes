@@ -159,3 +159,7 @@ Subdivide states into regions, maybe now it is Hamiltonain?
 Problem: we want to divide the states into regions, such that the regions is Hamiltonian.
 
 Show that 2k-2 regions in total always sufficies.
+
+Magic word: spanning tree problem
+
+Solution: We have a graph, it is connected, thus it has a spanning tree. Pick a spanning tree. We have k verticies, and k-1 edges in the spanning tree. If we now start somewhere and follow the spanning tree around the edges of the spanning tree. What we then do is we make a region for every outlined of the edge of the spanning tree. Therefore every edge of the spanning tree contributes to two new region. Thus, k-1 eges becomes 2k-2 regions.
