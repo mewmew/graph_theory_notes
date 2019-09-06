@@ -158,4 +158,4 @@ Subdivide states into regions, maybe now it is Hamiltonain?
 
 Problem: we want to divide the states into regions, such that the regions is Hamiltonian.
 
-Show that 2k-1 regions in total always sufficies.
+Show that 2k-2 regions in total always sufficies.
