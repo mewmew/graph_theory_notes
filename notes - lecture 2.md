@@ -2,6 +2,8 @@
 
 degree: number of verticies connected to a vertex?
 
+LaTeX symbols: https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols
+
 ## Table of Contents
 
 Graph theory: Per Alexandersson
@@ -115,3 +117,29 @@ If there is an Eulerian tour, then the graph has to be connected, and every vert
 ![Eulerian vertex of even degree](inc/lecture_2/eulerian_even_degree.png)
 
 We take a cycle, and extend C, where in one vertex where it is connected to another Eulerian cycle, we take another edge instead of going back, and in this way we can take all the cycles and eventually end up in a big Eulerian tour.
+
+## Hamiltonian cycles
+
+Cycle visiting every *vertex* exactly once.
+
+Used in travelling sales person problem.
+
+Theorem:
+
+G has at least 3 verticies
+\delta(G) >= n/2, then G has a HC.
+
+Take a longest path P
+
+v_1        v_i     v_{i+1}       v_kr
+
+All neighbours of v_1 has to be in the path P, as otherwise, we could add one of those neighbours to the path to make a longer path. That would mean that P was not the longest path, which is how we choose to construct it, so contradiction. The same is true for v_k.
+
+Then there must be a cycle. There cannot be any other vertex connected to the cycle, as that would mean that we could create a longer path. That means that this cycle is indeed a HC.
+
+![Hamiltonian Cycle](inc/lecture_2/HC.png)
+
+### Connected
+
+\delta(G) >= n/2, also entails that the graph is connected.
+Suppose it is disconnected. The smallest component is going to have at most half the verticies. What is the degree of the smallest component that has at most n/2 nodes. The degree of such a component would be n/2-1, thus contradicting that it is not connected.
