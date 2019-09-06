@@ -91,3 +91,27 @@ Suppose F \subseteq E(G) separates G, |F| = \lamda(G).
 If one of the separating edges was part of one of the components C_1 or C_2, then the separating set would not have been minimal, as that edge was not needed to separate C_1 from C_2.
 
 ![separating set of edges](inc/lecture_2/separating.png)
+
+Case 1: x isn't an end-point of an edge in F.
+
+(v, w) \notin F.
+
+v has at most |F| neighbours that connect to F.
+
+Case 2: C only consists of end-points of F.
+
+deg(v) <= |F|
+
+It may be the case that when we remove all the neighbours of F, then there is a special case where the entire C_1 (or C_2) component is removed, in which case the graph is not separated. As such, we remove the other component completely. If this happens, try a different components, and if it happens again, then try different components. If this happens for all components, then this must be a complete graph.
+
+## Eulerian tour
+
+Theorem 1.8.1: Every *connected* graph with *all degrees even* is **Eulerian**.
+
+Eulerian tour: Visits all the edges exactly once.
+
+If there is an Eulerian tour, then the graph has to be connected, and every vertex has to have an even degree. Since we need one degree to enter a vertex, and one degree to leave.
+
+![Eulerian vertex of even degree](inc/lecture_2/eulerian_even_degree.png)
+
+We take a cycle, and extend C, where in one vertex where it is connected to another Eulerian cycle, we take another edge instead of going back, and in this way we can take all the cycles and eventually end up in a big Eulerian tour.
