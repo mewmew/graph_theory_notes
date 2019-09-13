@@ -47,3 +47,23 @@ Proof: Take a formula on 3-CNF, compute graph G
 Given a formula with n boolean variables m clauses of size 3.
 
 ![Hamiltonain paths](inc/lecture_3/hamiltonian_3cnf.png)
+
+Going left to right on level i "<=>" X_i = true
+
+Add nodes corresponding to clauses that can be visited if that clause is true.
+
+Hamiltonian path of basic graph
+
+x_i false --->--- on i'th level
+
+x_i false ---<---
+
+Visit each clause vertex where you pass variable that satisfies the clause.
+
+If you can solve Hamiltonan path, then you can solve 3-SAT.
+
+The other way around also holds, by Cook-Levin.
+
+Conclusion: We will not have necessary & sufficient conditions for Hamiltonicity.
+
+(unless P=NP)
