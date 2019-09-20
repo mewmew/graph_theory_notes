@@ -1,0 +1,13 @@
+// a   e
+// b   f
+// c   g
+// d   h
+
+digraph {
+   rankdir=LR
+   a -> f
+   a -> g
+   b -> e
+   c -> h
+   d -> f
+}
