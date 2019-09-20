@@ -1,5 +1,8 @@
 # Lecture 4 - flows
 
+when are the homework problems given, and when are they due?
+when is the paper review given, and when is it due?
+
 Per Alexandersson
 
 It is easier to prove things about matches if we have information about flow!
@@ -128,3 +131,58 @@ Matching as flow.
 Connect a source to the nodes of the left side of the bipartite graph and the nodes of the right side of the bipartite graph to a sink.
 
 ![matching_as_flow](inc/lecture_4/matching_as_flow.png)
+
+## Menger's theorem (edge)
+
+(edge, 3.3.31)
+
+G = (V, E) graph, A, C \subseteq V
+
+Then minimal # of *edges* separating A and B = maximal # of *edge*-disjoint A-B-paths.
+
+![Menger's theorem proof](inc/lecture_4/mengers_theorem.png)
+
+Let t be a maximal flow.
+
+|f| = # edge-disjoint paths.
+
+## Menger's theorem (vertex)
+
+G = (V, E) graph, A, C \subseteq V
+
+Then minimal # of *verticies* separating A and B = maximal # of *vertex*-disjoint A-B-paths.
+
+Since the edge has capacity one, you can only have incoming flow from one predecessor node.
+
+![Menger's theorem 2 proof](inc/lecture_4/mengers_theorem_2.png)
+
+Key idea: Removal of edges in the old graph correspond to removal of verticies in the new graph.
+
+## Hall's Marriage theorem
+
+Bipartite graph and for every A \subseteq X
+
+R(A) >= |A|
+
+R(A) are the neighbours of A. (you don't count edges twice, so it's not the sum of the degrees of neighbours of A_i through A_n)
+
+Then G has an X-matching.
+
+Every person in X is going to match with one person in Y, but there might be people in Y with no matching.
+
+Then G has an X-matching.
+
+Maximal flow |f| is at most |X|.
+
+Max-flow min-cut.
+
+S = X' \union Y'
+
+|X| >= |X'| + |Y'|
+
+Maximum flow goes from S to \bar{S}.
+
+X' matched with Y''
+X'' matched with Y'
+
+|X''| <= |X'|

@@ -1,0 +1,18 @@
+digraph {
+   a -> ap
+   a -> b
+   ap -> bp
+   a -> c
+   ap -> cp
+   b -> bp
+   b -> d
+   bp -> dp
+   b -> e
+   bp -> ep
+   c -> cp
+   c -> d
+   cp -> dp
+   d -> dp
+   d -> e
+   dp -> ep
+}
