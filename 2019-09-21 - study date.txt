@@ -1,0 +1,11 @@
+MST
+   - [x] Prim
+   - [x] Kruskal
+Flow
+   - [x] Kirchhoff
+Cut
+   - [x] Menger (vertex)
+Matching
+   - [x] Hall's marriage theorem
+Ramsey
+   -
