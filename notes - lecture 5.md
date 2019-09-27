@@ -216,3 +216,6 @@ Alternating cycle, switch blues to reds.
 Case: same cycles
 
 Start at bd, once we hit a or c return to b. A cycle conutaining bd and we switch M_2 to this again a perfect matching of G'.
+
+Perfect matching: every vertex has degree 1.
+Add more edges, now some has degree two. Then cycles can be created, and we can start to look for alternating paths.
