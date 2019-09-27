@@ -210,3 +210,9 @@ Switch M_2 on the cycle of bd.
 This gives a perfect matching on G'.
 
 ![a b c d, M1, M2](inc/lecture_5/abcd_M1_M2.png)
+
+Alternating cycle, switch blues to reds.
+
+Case: same cycles
+
+Start at bd, once we hit a or c return to b. A cycle conutaining bd and we switch M_2 to this again a perfect matching of G'.
