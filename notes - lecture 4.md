@@ -188,10 +188,10 @@ X'' matched with Y'
 |X''| <= |X'|
 
 # Lecture 4 - Gabriel's notes
-![Page 1](inc/handwritten/1.jpg)
-![Page 2](inc/handwritten/2.jpg)
-![Page 3](inc/handwritten/3.jpg)
-![Page 4](inc/handwritten/4.jpg)
-![Page 5](inc/handwritten/5.jpg)
-![Page 6](inc/handwritten/6.jpg)
-![Page 7](inc/handwritten/7.jpg)
+![Page 1](inc/lecture_4/handwritten/1.jpg)
+![Page 2](inc/lecture_4/handwritten/2.jpg)
+![Page 3](inc/lecture_4/handwritten/3.jpg)
+![Page 4](inc/lecture_4/handwritten/4.jpg)
+![Page 5](inc/lecture_4/handwritten/5.jpg)
+![Page 6](inc/lecture_4/handwritten/6.jpg)
+![Page 7](inc/lecture_4/handwritten/7.jpg)
