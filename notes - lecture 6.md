@@ -188,3 +188,46 @@ By Euler's formula, not planar.
 K^{3,3}
 
 A bipartite graph does not have any odd cycles.
+
+## Graph colourings
+
+A colouring of G assings a colour to each vertex, such that neighbouring verticies have different colours.
+
+### Chromatic number
+
+Def: Chromatic number, \chi(G) = minimal number of colours needed to colour G.
+
+\chi(K^5) = 5       (complete graph with 5 verticies is 5-colourable)
+\chi(K^{3,3}) = 2   (every bipartite graph is 2-colourable)
+
+## 4-colour theorem
+
+Need at most 4 colours to colour a planar graph.
+
+## 5-colour thorem
+
+Lemma (foobar): every planar graph has a vertex with degree <= 5.
+
+Proof:
+
+suppose deg(v) >= 6 for all v \in V.
+
+by double counting of edges:
+
+2|E| >= 6|V|
+|E| >= 3|V|
+
+We also showed that |E| <= 3|V| - 6 for every planar graph.
+
+3|V| <= |E| <= 3|V| - 6
+
+## 5-colour theorem
+
+\chi(G) <= 5 if G is planar.
+
+* Induction over |V|.
+* Enough to consider deg(v) >= 5 for all v \in V.
+* By lemma (foobar), there is a vertex with degree exactly equal to 5.
+
+Look at the connected component that have colours 1 and 3.
+We can swap the colours.
