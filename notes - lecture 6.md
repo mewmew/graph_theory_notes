@@ -43,7 +43,7 @@ Theorem: Erdos Posa (chapter 2.3)
 How to think of k:
 k = sqrt(n) roughly.
 
-Either a graph has k disjoin cycles or there are 4k(log + .... + k + 5) vertices S such that S \intersect C != 0 for any cycle.
+Either a graph has k disjoin cycles or there are 4k(logk +loglogk + 5) vertices S such that S \intersect C != 0 for any cycle.
 
 ### Proof
 
@@ -78,3 +78,16 @@ However, that could go against the maximality of H; contradiction.
 But two cycles C intersect in exactly 1 point. We can't add it, since that would be degree 4. However, if two cycles intersect at 1 point, and with each other, then we can add a piece.
 
 ![disjoint cycles](inc/lecture_6/disjoint_cycles.png)
+
+## Lemma A 3-regular graph
+
+Lemma A 3-regular graph with 4k(logk +loglogk + 4) = n
+verticies has >= k disjoint cycles
+
+This lemma completes proof. (?)
+
+Contracted graph has many verticies.
+
+By lemma: H has many degree 3 => H' big => H' has many disjoint cycles => H has many disjoint cycles
+
+![many disjoint edges](inc/lecture_6/many_disjoint_edges.png)
